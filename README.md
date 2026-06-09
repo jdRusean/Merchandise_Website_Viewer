@@ -1,4 +1,4 @@
-# UBE Shop
+# JDRUS Online Merchandise Shop
 
 UBE Shop is a beginner-friendly merchandise website starter for small creators. If you are a small YouTuber, streamer, artist, or community creator who wants to sell simple merch online, this project gives you a cute store, cart, checkout flow, forum page, and admin dashboard using plain HTML, CSS, and JavaScript.
 
