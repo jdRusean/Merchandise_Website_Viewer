@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | UBE Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <a class="logo" href="index.html">UBE Shop</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="forum.html">Forum</a>
+      <a href="index.html#shop">Shop</a>
+    </nav>
+    <button class="cart-button" type="button" data-cart-open>
+      Cart <span class="cart-count" data-cart-count>0</span>
+    </button>
+  </header>
+
+  <main class="page-shell">
+    <section class="section-heading compact-heading">
+      <p class="eyebrow">Almost There</p>
+      <h1>Checkout</h1>
+    </section>
+
+    <section class="checkout-layout">
+      <div class="checkout-items" data-checkout-items></div>
+      <aside class="checkout-summary">
+        <h2>Order Summary</h2>
+        <label class="summary-region-label">
+          Price region
+          <select data-price-region></select>
+        </label>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong data-checkout-subtotal>PHP 0.00</strong>
+        </div>
+        <button class="primary-button" type="button" data-show-order-form>Checkout</button>
+        <a class="secondary-link" href="index.html#shop">Continue Shopping</a>
+      </aside>
+    </section>
+
+    <section class="order-form-panel" data-order-panel hidden>
+      <h2>Delivery Details</h2>
+      <form data-order-form>
+        <label>
+          Full name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Phone number
+          <input type="tel" name="phone" required>
+        </label>
+        <label>
+          Email address
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Delivery address
+          <textarea name="address" rows="3" required></textarea>
+        </label>
+        <label>
+          Delivery price region
+          <select name="deliveryRegion" data-price-region></select>
+        </label>
+        <label>
+          Optional message or notes
+          <textarea name="notes" rows="3"></textarea>
+        </label>
+        <button class="primary-button" type="submit">Place Order</button>
+      </form>
+      <p class="notice success" data-order-message hidden></p>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" data-cart-drawer aria-label="Shopping cart">
+    <div class="cart-panel">
+      <div class="cart-panel-header">
+        <h2>Your Cart</h2>
+        <button class="icon-button" type="button" data-cart-close aria-label="Close cart">x</button>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-summary">
+        <label class="summary-region-label">
+          Price region
+          <select data-price-region></select>
+        </label>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong data-cart-subtotal>PHP 0.00</strong>
+        </div>
+        <a class="checkout-link" href="checkout.html">Checkout</a>
+      </div>
+      <div class="suggestions">
+        <h3>YOU MIGHT ALSO LIKE</h3>
+        <div data-cart-suggestions></div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

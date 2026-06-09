@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum | UBE Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="forum">
+  <header class="site-header">
+    <a class="logo" href="index.html">UBE Shop</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="forum.html">Forum</a>
+      <a href="index.html#shop">Shop</a>
+    </nav>
+    <button class="cart-button" type="button" data-cart-open>
+      Cart <span class="cart-count" data-cart-count>0</span>
+    </button>
+  </header>
+
+  <main class="page-shell forum-page">
+    <section class="forum-board">
+      <div class="forum-title-row">
+        <div>
+          <p class="eyebrow">Community Board</p>
+          <h1>UBE Fan Forum</h1>
+        </div>
+        <button class="secondary-button" type="button" data-logout-button hidden>Log out</button>
+      </div>
+
+      <section class="login-panel" data-login-panel>
+        <h2>Login to Post</h2>
+        <form data-login-form>
+          <label>
+            Username
+            <input type="text" name="username" required>
+          </label>
+          <button class="primary-button" type="submit">Login</button>
+        </form>
+      </section>
+
+      <section class="message-form-panel">
+        <h2>New Message</h2>
+        <p class="notice" data-forum-login-notice hidden>Please log in to post a message.</p>
+        <form data-post-form>
+          <label>
+            Message content
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="primary-button" type="submit">Post Message</button>
+        </form>
+      </section>
+
+      <section class="forum-messages">
+        <h2>Messages</h2>
+        <div data-forum-posts></div>
+      </section>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" data-cart-drawer aria-label="Shopping cart">
+    <div class="cart-panel">
+      <div class="cart-panel-header">
+        <h2>Your Cart</h2>
+        <button class="icon-button" type="button" data-cart-close aria-label="Close cart">x</button>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-summary">
+        <label class="summary-region-label">
+          Price region
+          <select data-price-region></select>
+        </label>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong data-cart-subtotal>PHP 0.00</strong>
+        </div>
+        <a class="checkout-link" href="checkout.html">Checkout</a>
+      </div>
+      <div class="suggestions">
+        <h3>YOU MIGHT ALSO LIKE</h3>
+        <div data-cart-suggestions></div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">UBE Sticker Pack</title>
+  <desc id="desc">Cute UBE sticker pack product placeholder.</desc>
+  <rect width="600" height="600" fill="#FFF4E6"/>
+  <g transform="rotate(-10 230 270)">
+    <rect x="120" y="150" width="220" height="220" rx="34" fill="#D6C2E6"/>
+    <circle cx="230" cy="245" r="54" fill="#FFF4E6"/>
+    <path d="M208 292 C222 306 238 306 252 292" fill="none" stroke="#4B3364" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="206" cy="244" r="12" fill="#4B3364"/>
+    <circle cx="254" cy="244" r="12" fill="#4B3364"/>
+  </g>
+  <g transform="rotate(12 365 290)">
+    <rect x="300" y="180" width="180" height="180" rx="30" fill="#F4C74B"/>
+    <path d="M350 250 L390 212 L430 250 L390 315 Z" fill="#FFF4E6"/>
+  </g>
+  <g transform="rotate(4 330 380)">
+    <rect x="220" y="345" width="230" height="125" rx="30" fill="#C8B1E4"/>
+    <text x="335" y="425" fill="#4B3364" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" text-anchor="middle">UBE</text>
+  </g>
+  <text x="300" y="540" fill="#4B3364" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" text-anchor="middle">STICKER PACK</text>
+</svg>

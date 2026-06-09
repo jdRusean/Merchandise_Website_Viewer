@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">UBE Shop pastel hero artwork</title>
+  <desc id="desc">A soft pastel purple shop background with cute merchandise shapes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFF4E6"/>
+      <stop offset="0.48" stop-color="#D6C2E6"/>
+      <stop offset="1" stop-color="#C8B1E4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#4B3364" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <path d="M0 760 C220 650 390 850 610 720 C820 595 990 665 1160 565 C1330 465 1450 520 1600 430 L1600 1000 L0 1000 Z" fill="#FFF4E6" opacity="0.78"/>
+  <path d="M1040 170 C1190 112 1355 146 1454 252 C1540 345 1544 486 1471 592 C1377 730 1170 753 1036 641 C914 539 888 229 1040 170 Z" fill="#F4C74B" opacity="0.88"/>
+  <g filter="url(#shadow)">
+    <rect x="980" y="315" width="250" height="315" rx="40" fill="#FFF4E6"/>
+    <path d="M1040 315 C1053 252 1156 252 1170 315" fill="none" stroke="#4B3364" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="1067" cy="430" r="22" fill="#C8B1E4"/>
+    <circle cx="1150" cy="430" r="22" fill="#C8B1E4"/>
+    <path d="M1064 510 C1092 540 1132 540 1160 510" fill="none" stroke="#4B3364" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1230" y="520" width="210" height="155" rx="24" fill="#F2F4F8"/>
+    <path d="M1270 520 L1298 468 H1372 L1400 520" fill="#C8B1E4"/>
+    <circle cx="1288" cy="602" r="12" fill="#4B3364"/>
+    <circle cx="1384" cy="602" r="12" fill="#4B3364"/>
+  </g>
+  <g opacity="0.65">
+    <circle cx="220" cy="230" r="64" fill="#F4C74B"/>
+    <circle cx="330" cy="330" r="34" fill="#C8B1E4"/>
+    <circle cx="1420" cy="180" r="30" fill="#FFF4E6"/>
+    <circle cx="138" cy="650" r="26" fill="#D6C2E6"/>
+    <path d="M400 170 L452 218 L400 266 L348 218 Z" fill="#FFF4E6"/>
+  </g>
+</svg>

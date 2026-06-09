@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UBE Shop | Official Merch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="logo" href="index.html">UBE Shop</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="forum.html">Forum</a>
+      <a href="#shop">Shop</a>
+    </nav>
+    <button class="cart-button" type="button" data-cart-open>
+      Cart <span class="cart-count" data-cart-count>0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Pastel merch for the UBE community</p>
+        <h1>OFFICIAL UBE SHOP</h1>
+        <a class="primary-link" href="#shop">Shop Merch</a>
+      </div>
+    </section>
+
+    <section class="section-block" id="shop">
+      <div class="section-heading">
+        <p class="eyebrow">Fresh Drops</p>
+        <h2>Community Favorites</h2>
+      </div>
+      <div class="price-region-panel">
+        <label>
+          Price region
+          <select data-price-region></select>
+        </label>
+        <p>Keychain prices change by delivery region.</p>
+      </div>
+      <div class="product-grid" data-product-list></div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" data-cart-drawer aria-label="Shopping cart">
+    <div class="cart-panel">
+      <div class="cart-panel-header">
+        <h2>Your Cart</h2>
+        <button class="icon-button" type="button" data-cart-close aria-label="Close cart">x</button>
+      </div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-summary">
+        <label class="summary-region-label">
+          Price region
+          <select data-price-region></select>
+        </label>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong data-cart-subtotal>PHP 0.00</strong>
+        </div>
+        <a class="checkout-link" href="checkout.html">Checkout</a>
+      </div>
+      <div class="suggestions">
+        <h3>YOU MIGHT ALSO LIKE</h3>
+        <div data-cart-suggestions></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" data-product-modal hidden>
+    <section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-name">
+      <button class="icon-button modal-close" type="button" data-modal-close aria-label="Close details">x</button>
+      <div data-modal-content></div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Information</h3>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div>
+      <h3>Get in Touch</h3>
+      <a class="underlined" href="mailto:your-email@example.com">Message Us</a>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+      <a href="https://discord.com/" target="_blank" rel="noreferrer">Discord</a>
+    </div>
+    <p class="copyright">&copy; 2026 UBE Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

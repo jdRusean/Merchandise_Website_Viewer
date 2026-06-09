@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | UBE Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+  <header class="site-header">
+    <a class="logo" href="index.html">UBE Shop</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="forum.html">Forum</a>
+      <a href="index.html#shop">Shop</a>
+    </nav>
+    <a class="admin-link" href="admin.html">Admin</a>
+  </header>
+
+  <main class="page-shell admin-page">
+    <section class="admin-login" data-admin-login-panel>
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">Dashboard</p>
+        <h1>Admin Login</h1>
+      </div>
+      <form data-admin-login-form>
+        <label>
+          Username
+          <input type="text" name="username" autocomplete="username" required>
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <button class="primary-button" type="submit">Login</button>
+        <p class="notice warning" data-admin-login-message hidden></p>
+      </form>
+    </section>
+
+    <section class="admin-dashboard" data-admin-dashboard hidden>
+      <div class="forum-title-row">
+        <div>
+          <p class="eyebrow">Admin Dashboard</p>
+          <h1>UBE Shop Control Room</h1>
+        </div>
+        <button class="secondary-button" type="button" data-admin-logout>Log out</button>
+      </div>
+
+      <div class="summary-cards" data-dashboard-summary></div>
+
+      <section class="admin-section">
+        <h2>Merchandise Management</h2>
+        <form class="admin-form-grid" data-product-form>
+          <input type="hidden" name="id">
+          <label>
+            Product name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Product image URL or local path
+            <input type="text" name="image" required>
+          </label>
+          <label>
+            Price
+            <input type="number" name="price" min="0" step="0.01" required>
+          </label>
+          <label>
+            Currency
+            <input type="text" name="currency" value="PHP" maxlength="3" required>
+          </label>
+          <label>
+            Stock
+            <input type="number" name="stock" min="0" step="1" required>
+          </label>
+          <label>
+            Philippines price
+            <input type="number" name="pricePhilippines" min="0" step="0.01">
+          </label>
+          <label>
+            Nearby Asia price
+            <input type="number" name="priceNearbyAsia" min="0" step="0.01">
+          </label>
+          <label>
+            Overseas price
+            <input type="number" name="priceOverseas" min="0" step="0.01">
+          </label>
+          <label class="wide-field">
+            Description
+            <textarea name="description" rows="3" required></textarea>
+          </label>
+          <p class="admin-help wide-field">Leave regional prices blank for normal fixed-price products. Fill all three for items like the UBE Keychain.</p>
+          <div class="admin-form-actions">
+            <button class="primary-button" type="submit">Save Merchandise</button>
+            <button class="secondary-button" type="button" data-clear-product-form>Clear</button>
+          </div>
+        </form>
+        <div class="admin-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody data-admin-products></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-section">
+        <div class="admin-section-heading">
+          <h2>Order Management</h2>
+          <input type="search" placeholder="Search name, email, or order ID" data-order-search>
+        </div>
+        <div class="admin-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Products</th>
+                <th>Subtotal</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody data-admin-orders></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-section">
+        <h2>Forum Management</h2>
+        <div data-admin-forum-posts></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
